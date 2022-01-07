@@ -28,7 +28,7 @@ const div1Color = ['black','white','black','white',fontcolor,'white','black','wh
 const div1TextColor = ['white','black','white','black','white','black','white','black','white','black'];
 
 const div2Color = ['white',fontcolor,'white','black','white','black','white','black','white','black'];
-const div2TextColor = ['black','white','black','white','black','white',fontcolor,'white','black','white'];
+const div2TextColor = ['black','white','black','white','black','white','black','white','black','white'];
 
 const div3Color = ['black','white','black','white','black',fontcolor,'black','white','black','white'];
 const div3TextColor = ['white','black','white','black','white','black','black','black','white','black'];
