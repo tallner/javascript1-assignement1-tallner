@@ -31,7 +31,7 @@ const div2Color = ['white',fontcolor,'white','black','white','black','white','bl
 const div2TextColor = ['black','white','black','white','black','white','black','white','black','white'];
 
 const div3Color = ['black','white','black','white','black',fontcolor,'black','white','black','white'];
-const div3TextColor = ['white','black','white','black','white','black','black','black','white','black'];
+const div3TextColor = ['white','black','white','black','white','black','white','black','white','black'];
 
 
 //outer div with black border
