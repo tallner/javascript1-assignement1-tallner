@@ -48,12 +48,39 @@ for(let i=1;i<=maxIteration;i++){
     const hue = minHue + (i*((maxHue-minHue)/maxIteration));
     
     h3.innerText = `Rad ${i}`;
+
     h3.style.fontSize = `${i*10}px`;
     h3.style.textAlign = 'center';
-
     h3.style.backgroundColor = `hsl(${hue}, 75%, 75%)`;
     
     document.body.append(h3);
 }
 
 
+
+//create the number divs
+const outerIteration = 3;
+const innerIteration = 9;
+const numbers = ['ett','två','tre','fyra','fem','sex','sju','åtta','nio','tio'];
+
+//outer div with black border
+const outerDiv = document.createElement('div');
+outerDiv.style.border = 'solid black 1px';
+document.body.append(outerDiv);
+for(let i=1;i<=outerIteration;i++){
+
+    //inner divs
+    const innerDiv = document.createElement('div');
+    innerDiv.style.border = 'solid red 1px';
+    outerDiv.append(innerDiv);
+
+    //add numbers to inner divs
+    for(let j=0;j<=innerIteration;j++){
+        const p = document.createElement('p');
+        if (i===1) {p.innerText = j;}
+        else if (i===2) {p.innerText = innerIteration-j;}
+        else if (i===3) {p.innerText = numbers[j];}
+        
+        innerDiv.appendChild(p);
+    }
+}
